@@ -1,0 +1,81 @@
+Hola Rafel, te mando una propuesta con unos pequeños cambios que creo serán beneficiosos para la legibilidad
+y accesibilidad. No son muy drásticos y no creo que sean un problema para los usuarios.
+Para que veas más fácilmente los cambios te mando una copia de la hoja de estilos que usa 
+la aplicación con los cambios ya hechos, es tan solo una demo para poder testear rápidamente.
+
+
+La forma más fácil de verlo es en el mismo navegador: usando el inspector de código, editar la hoja de estilos, borrar y pegar los que te mando. También hay que añadir en el html dentro del <header> el código de que carga la fuente
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+Supongo que no tendrás ningún problema, en cualquier caso lo miramos juntos.
+
+
+Te describo un poco los cambios que he hecho:
+
+
+He tenido en cuenta la legibilidad y accesibilidad de la web ya que hay un porcentaje alto de personas con
+dificultad para ver bien combinaciones y contrastes de colores
+
+https://webaim.org/resources/contrastchecker
+
+
+
+1- Cambio de la fuente tipográfica a Mulish.
+
+Esta fuente es más ligera y más agradable de leer. Al utilizar solamente una fuente ganamos facilidad lectora además
+de ser la fuente que usamos en los textos largos en la web por lo que unificamos un poco la imagen de la empresa. 
+
+
+Se puede descargar desde aquí  https://fonts.google.com/specimen/Mulish
+
+o incrustar la llamada en el html  para hacer una prueba
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+Las clases que cargaban una 'roboto bold' ahora cargan la fuente principal
+y se le añade font-weight: var(--main-font-weight-bold);
+
+
+Las clases que cargaban una 'roboto condensed light' ahora cargan la fuente principal
+y se le añade font-weight: var(--main-font-weight-light);
+
+
+2 - He cambiado el color de fondo del menú de navegación
+Lo he oscurecido porque no pasaba el contraste de accesibilidad y he puesto en bold los textos para mejorar la legibilidad
+
+
+3 - He sustituido el antiguo color #d9534f 
+este no pasaba el contraste de accesibilidad y lo he cambiado por el #E42545
+
+https://webaim.org/resources/contrastchecker/
+
+
+4 - He puesto el texto en bold de la opción del menú lateral seleccionado para destacarlo y ganar legibilidad
+
+.list-items ul li.idSelected a {
+    color: #fff;
+    background-color: var(--main-red);
+    font-weight: bold;  
+}
+
+He utilizado variables css para facilitar los cambios, te adjunto el fichero CSS y un pantallazo de cómo se ven los cambios.
+Cuando quieras hablamos y los vemos más en profundidad
+
+
+
+
+PROPUESTA
+
+- QUITAR ICONOS HOJOS Y PONER CURSOR POINTER
+
