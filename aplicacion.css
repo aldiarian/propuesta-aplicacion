@@ -46984,7 +46984,7 @@ html {
 }
 
 body {
-    padding-top: calc(50px + 60px);
+    padding-top: calc(50px + 50px);
     font-family: var(--main-font-family, Helvetica, Arial, sans-serif);
     background-color: var(--background-body-color, #fff)
     color: #444;
@@ -47270,6 +47270,24 @@ ul.top-crum li a {
     background-color: #fff;
     margin-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem;
+    
+}
+
+.page-today{
+    .re-header{
+        /* bajar tamaño */
+        tr>td {
+            padding: 0;
+        }
+        .width-logo{
+            padding-left: 1rem;
+            width: 50px;
+        }
+        h3{
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
 }
 
 @media(min-height:750px) {
@@ -47346,8 +47364,14 @@ td span .btn-xs {
     cursor: pointer;
     padding-top: 6px;
 
-    /* visibility: hidden;
-    display: none; */
+    /* fad fa-eye */
+/* propuesta con clases fal fa-arrow-right*/
+    cursor: pointer;
+    padding-top: 4px;
+    font-size: 9px;
+    color: #959595;
+    display: flex;
+    align-items: center;
 }
 
 .re-texts {

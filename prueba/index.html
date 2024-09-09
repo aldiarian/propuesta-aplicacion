@@ -769,8 +769,10 @@
     </style>
 </head>
 
-<body hide-show-bot="">
-    <!-- uiView: --><ui-view class="ng-scope"><!-- uiView: --><ui-view class="ng-scope"><!--
+<body hide-show-bot="" class="page-today">
+    <!-- uiView: -->
+     <ui-view class="ng-scope"><!-- uiView: -->
+        <ui-view class="ng-scope"><!--
 <div class="fill" ng-show="!lessThan360" >
     <div class="" ui-view="header" ></div>
     <div class="fill" ui-view="main"  ></div>
@@ -2268,7 +2270,8 @@
                                         <table class="full-width">
                                             <tbody>
                                                 <tr><!--ng-if="showImageInDetail"-->
-                                                    <td class="align-top align-top width-logo"><img
+                                                    <td class="align-top align-top width-logo">
+                                                        <img
                                                             class="with-margin image-size show-animation"
                                                             ng-src="https://app.tspoonlab.com/recipes/api/images/tu-logo-aqui.png?rememberme=YXBwZGVtb0B0c3Bvb25sYWIuY29tOjE3NTUxODQ0MzkyNjU6OjozNDEzMDcxMDUwNDE1NmI3MzQ1YjAyNDE3MWYxZDZmNw&amp;language=es&amp;order=309839939968590152592048466601120097765&amp;recipe=all&amp;timezone=Europe%2FMadrid"
                                                             src="https://app.tspoonlab.com/recipes/api/images/tu-logo-aqui.png?rememberme=YXBwZGVtb0B0c3Bvb25sYWIuY29tOjE3NTUxODQ0MzkyNjU6OjozNDEzMDcxMDUwNDE1NmI3MzQ1YjAyNDE3MWYxZDZmNw&amp;language=es&amp;order=309839939968590152592048466601120097765&amp;recipe=all&amp;timezone=Europe%2FMadrid">
@@ -2416,7 +2419,7 @@
                                                                                             class="text-right"><a
                                                                                                 class="re-ing-eye"
                                                                                                 ng-click="navigate(componentsTypes.Ingredients)"><span
-                                                                                                    class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                    class="fal fa-arrow-right"></span></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr class="tr-hover"
@@ -2437,7 +2440,7 @@
                                                                                             class="text-right"><a
                                                                                                 class="re-ing-eye"
                                                                                                 ng-click="navigate(componentsTypes.Materials)"><span
-                                                                                                    class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                    class="fal fa-arrow-right"></span></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr class="tr-hover"
@@ -2458,7 +2461,7 @@
                                                                                             class="text-right"><a
                                                                                                 class="re-ing-eye"
                                                                                                 ng-click="navigate(componentsTypes.Costs)"><span
-                                                                                                    class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                    class="fal fa-arrow-right"></span></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr class="tr-hover"
@@ -2479,7 +2482,7 @@
                                                                                             class="text-right"><a
                                                                                                 class="re-ing-eye"
                                                                                                 ng-click="navigate(componentsTypes.Recipes)"><span
-                                                                                                    class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                    class="fal fa-arrow-right"></span></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr class="tr-hover"
@@ -2500,7 +2503,7 @@
                                                                                             class="text-right"><a
                                                                                                 class="re-ing-eye"
                                                                                                 ng-click="navigate(componentsTypes.Dishes)"><span
-                                                                                                    class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                    class="fal fa-arrow-right"></span></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                     <tr class="tr-hover"
@@ -2521,7 +2524,7 @@
                                                                                             class="text-right"><a
                                                                                                 class="re-ing-eye"
                                                                                                 ng-click="navigateVendors()"><span
-                                                                                                    class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                    class="fal fa-arrow-right"></span></a>
                                                                                         </td>
                                                                                     </tr>
                                                                                 </tbody>
@@ -2988,7 +2991,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -3048,7 +3051,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in listPending -->
@@ -3191,7 +3194,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOpened(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngIf: data.countTotalProductionPreviousOpened  > 0 -->
@@ -3364,7 +3367,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -3391,7 +3394,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -3417,7 +3420,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -3474,7 +3477,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in listPending -->
@@ -3515,7 +3518,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in listPending -->
@@ -3547,7 +3550,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in listPending -->
@@ -3581,7 +3584,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in listPending -->
@@ -3804,7 +3807,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -3835,7 +3838,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -3866,7 +3869,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -3897,7 +3900,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -3928,7 +3931,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -3959,7 +3962,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -3990,7 +3993,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4021,7 +4024,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4052,7 +4055,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4082,7 +4085,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4509,7 +4512,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4546,7 +4549,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4583,7 +4586,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4620,7 +4623,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4658,7 +4661,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4696,7 +4699,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4733,7 +4736,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4770,7 +4773,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4807,7 +4810,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -4845,7 +4848,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -5085,7 +5088,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPathOrder(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- ngIf: item.expanded --><!-- end ngRepeat: item in list -->
@@ -5224,7 +5227,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -5249,7 +5252,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -5276,7 +5279,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -5302,7 +5305,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -5329,7 +5332,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -5466,7 +5469,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -5489,7 +5492,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -5513,7 +5516,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
@@ -5537,7 +5540,7 @@
                                                                                                 style="width:30px;"><a
                                                                                                     class="re-ing-eye"
                                                                                                     ng-click="pushToPath(item)"><span
-                                                                                                        class="fal fa-angle-right icon-angle-right-link"></span></a>
+                                                                                                        class="fal fa-arrow-right"></span></a>
                                                                                             </td>
                                                                                         </tr>
                                                                                         <!-- end ngRepeat: item in list -->
