@@ -48962,7 +48962,7 @@ a {
     position: relative;
 
     /* aligerar el scroll */
-    scrollbar-color: #f5f2f2  white;
+    scrollbar-color: #eee9e9  white;
     scrollbar-width: thin;
 }
 
@@ -50468,6 +50468,7 @@ input:matches([type=email], [type=number], [type=password], [type=search], [type
 
 #leftPane {
     border-right: .5px solid #eee;
+    box-shadow: rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 1rem;
 }
 
 .control-label {
