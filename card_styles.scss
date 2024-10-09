@@ -1,58 +1,152 @@
-
-
-@media(min-width:1600px) {
-    #rightPane{
-        max-width: 100%;
-    }
+:root {
+  --ts-c-card-main-font-family: roboto regular, helvetica neue, Helvetica, Arial,sans-serif;
+  --ts-c-card-main-font-family-bold: roboto bold, helvetica neue, Helvetica, Arial, sans-serif;
+  --ts-c-card-radius: 24px;
+  --ts-c-card-hover-link-color: grey;
+  --ts-c-card-main-red: #d9534f;
 }
 
-.ts-c-card{
-    border: 1px solid black;
-    background-color: white;
-    max-width: 1200px;
-    padding: 3rem;
-    border-radius: 12px;
-    margin: 0 auto;
+@media (min-width: 1600px) {
+  #rightPane {
+    max-width: 100%;
+  }
+}
+
+.ts-c-card {
+  border: 1px solid #d3d3d363;
+  background-color: white;
+  width: 93%;
+  max-width: 1300px;
+  padding: 3.5rem;
+  border-radius: var(--ts-c-card-radius);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__body{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    cursor: pointer;
+  }
+  &__logo {
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #D7D7D7;
+    svg {
+      max-width: 170px;
+      &:hover{
+       opacity: 0.7;
+      }
+    }
+  }
+  &__title{
+    font-family: var(--ts-c-card-main-font-family);
+    font-size: 18px;
+  }
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    &__header{
+    &-body {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 4rem;
+    }
+    &-header {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      cursor: pointer;
+
+      .ts-c-headline {
+        color: var(--ts-c-card-main-red);
+        font-family: var(--ts-c-card-main-font-family-bold);
+        font-size: 18px;
+        &:hover{
+          color: var(--ts-c-card-hover-link-color);
+        }
+      }
+      .ts-c-decorator {
+        border-bottom: 1px solid black;
+        flex-grow: 1;
+        height: 1px;
+      }
+      .ts-c-link{
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-.ts-c-card__logo{
-    width: 100%;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid black;
-    svg{
-        max-width: 190px;
-    }
-}
-.ts-c-card__list{
-    &-body{
-        display: grid;
-        grid-template-columns: repeat(auto-fit ,minmax(200px, 1fr));
-        gap: 2rem;
-    }
-    &-item{
-        border: 1px solid black;
-        height: 150px;
-    }
-    &-header{
-        display: flex;
-        gap: 1rem;
         align-items: center;
-        .ts-c-headline{
-            color: red;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
+        gap: 6px;
+        color: black;
+        svg{
+          height: 10px;
         }
-        .ts-c-decorator{
-            border-bottom: 1px solid black;
-            flex-grow: 1;
-            height: 1px;
+        &:hover{
+          svg{
+            fill:var(--ts-c-card-hover-link-color)
+          }
+          color: var(--ts-c-card-hover-link-color);
         }
+      }
     }
+  }
+  &__video {
+    border: 1px solid rgb(211 211 211 / 39%);
+    display: flex;
+    padding: 1.5rem;
+    height: 100%;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-family: var(--ts-c-card-main-font-family);
+    line-height: 1.2;
+    border-radius: var(--ts-c-card-radius);
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.112) 0px 3px 8px;
+    &:hover{
+      border: 1px solid #d3d3d3cd;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 12px;
+    }
+    &-title {
+      font-family: var(--ts-c-card-main-font-family-bold);
+      font-size: 18px;
+      font-weight: 900;
+    }
+    &-image {
+      border-radius: var(--ts-c-card-radius);
+      max-width: 100%;
+    }
+    &-text {
+      font-size: 14px;
+      font-weight: normal;
+    }
+    &-link{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: cursor;
+      &:hover{
+        color: var(--ts-c-card-hover-link-color)
+      }
+    }
+  }
+  &__button{
+    background: #b5b5b5;
+    border: none;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 0.7rem 1.7rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-family: var(--ts-c-card-main-font-family);
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
 }
